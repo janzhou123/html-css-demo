@@ -8,10 +8,6 @@
   line-height: 1.8;
 }
 
-.green {
-  color: #8ab92d;
-}
-
 .wrap {
   width: 100vw;
   background: url(../img/bg.jpg) no-repeat;
@@ -22,10 +18,9 @@
 .container {
   width: 80vw;
   margin: auto;
-  /*
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
-*/
+
+  /* height: 100vh;
+  background: rgba(0, 0, 0, 0.2); */
 }
 
 .banner {
@@ -36,13 +31,17 @@
   align-items: center;
 }
 
+.green {
+  color: #8ab92d;
+}
+
 .banner h3 {
-  font-size: 56px;
+  font-size: 40px;
   font-weight: 400;
 }
 
 .banner h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
 }
 
@@ -105,7 +104,6 @@
   width: 50px;
   height: 50px;
   border-radius: 3px;
-
   background: rgba(138, 185, 45, 0.7) url(../img/menu.svg) center no-repeat;
   background-size: 50%;
 
@@ -113,12 +111,6 @@
   top: 50px;
   right: 50px;
   z-index: 3;
-}
-
-.toggle-active {
-
-  background: rgba(138, 185, 45, 0.7) url(../img/guanbi.svg) center no-repeat;
-  background-size: 50%;
 }
 
 .menu {
@@ -137,12 +129,18 @@
   right: 0px;
 }
 
+.toggle-active {
+  background: rgba(138, 185, 45, 0.7) url(../img/guanbi.svg) center no-repeat;
+  background-size: 50%;
+}
+
 .menu ul li {
   width: 90%;
   margin: auto;
+  pading: 10px;
   list-style: none;
-  padding: 10px;
   transition: 0.8s;
+  line-height: 3;
 }
 
 .menu ul li img {
@@ -153,7 +151,6 @@
   background: #f7f6f4;
 }
 
-/*项目经验*/
 .title {
   margin-top: 80px;
 }
@@ -167,7 +164,7 @@
   width: 130px;
   height: 4px;
   background: #8ab92d;
-  margin: 20px 0;
+  margin: 20px 8;
   overflow: hidden;
 }
 
@@ -192,7 +189,6 @@
   }
 }
 
-/*筛选功能*/
 .button-group {
   width: 30%;
   height: 55px;
@@ -210,7 +206,6 @@
   font-size: 16px;
   padding: 6px 0;
   background: #f5f4f2;
-
 }
 
 .button-active {
@@ -224,7 +219,7 @@
 }
 
 .grid-item {
-  width: 33.333%;
+  width: 33.33%;
   padding: 0 20px 20px 0;
 }
 
@@ -232,7 +227,6 @@
   width: 100%;
 }
 
-/*项目经验*/
 .skill {
   width: 80%;
   display: grid;
@@ -252,7 +246,7 @@
 .skill-item:hover {
   border-bottom: 4px solid #8ab92d;
   transform: translateY(-4px);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.18);
 }
 
 .skill-item span {
@@ -268,8 +262,9 @@
   transform: scale(1.1);
 }
 
+
 .skill-item h6 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   padding: 20px 40px;
 }
@@ -278,8 +273,6 @@
   padding: 0 40px 30px 40px;
   color: #969696;
 }
-
-/*技能数据*/
 
 .skill-bars {
   width: 80%;
@@ -305,6 +298,7 @@
   margin-right: 20%;
 }
 
+
 .percent2 {
   float: right;
   margin-right: 15%;
@@ -320,7 +314,6 @@
   margin-right: 10%;
 }
 
-/*个人经历*/
 .resume {
   width: 80%;
   margin-top: 40px;
@@ -371,7 +364,6 @@
   display: block;
   font-size: 14px;
   padding: 10px 40px 10px 40px;
-
 }
 
 .resume-item p {
@@ -380,16 +372,13 @@
   color: #969696;
 }
 
-/*项目总结*/
-/*
-.summary {
+/* .summary {
   margin-top: 40px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
-}
-*/
+} */
 
 .summary-item {
   background: rgba(255, 255, 255, 0.8);
@@ -411,6 +400,8 @@
   position: absolute;
   top: 0;
   left: 20px;
+
+
 }
 
 .summary-tag p {
@@ -435,12 +426,6 @@
   animation: none;
 }
 
-.des {
+.desc {
   padding: 10px 30px 40px;
 }
-
-/*项目总结*/
-/*项目总结*/
-/*项目总结*/
-/*项目总结*/
-/*项目总结*/

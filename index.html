@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="font/iconfont.css">
   <link rel="stylesheet" href="css/jquery.running.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <script src="js/jquery.js"></script>
   <script src="js/typed.js"></script>
   <script src="js/isotope.js"></script>
   <script src="js/running.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <title>个人简历</title>
 </head>
 
@@ -251,14 +253,118 @@
         </div>
       </div>
 
+      <div class="title">
+        <h4>项目总结</h4>
+        <div class="bar">
+          <div class="bar-con"></div>
+        </div>
+        <p>CHECKOUT MY RESUME</p>
+      </div>
+      <div class="swiper-container">
+        <div class="summary swiper-wrapper">
+          <div class="summary-item swiper-slide">
+            <div class="summary-tag">
+              <p>品牌</p>
+            </div>
+            <img src="img/blog1.jpg" alt="">
+            <h6>为什么需要品牌印记</h6>
+            <span class="green iconfont icon-webicon315">2004.09-2008.07</span>
+            <p class="des">XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
 
-
-
-
+          <div class="summary-item  swiper-slide">
+            <div class="summary-tag">
+              <p>品牌</p>
+            </div>
+            <img src="img/blog2.jpg" alt="">
+            <h6>为什么需要品牌印记</h6>
+            <span class="green iconfont icon-webicon315">2004.09-2008.07</span>
+            <p class="des">XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="summary-item  swiper-slide">
+            <div class="summary-tag">
+              <p>品牌</p>
+            </div>
+            <img src="img/blog3.jpg" alt="">
+            <h6>为什么需要品牌印记</h6>
+            <span class="green iconfont icon-webicon315">2004.09-2008.07</span>
+            <p class="des">XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="summary-item  swiper-slide">
+            <div class="summary-tag">
+              <p>品牌</p>
+            </div>
+            <img src="img/blog4.jpg" alt="">
+            <h6>为什么需要品牌印记</h6>
+            <span class="green iconfont icon-webicon315">2004.09-2008.07</span>
+            <p class="des">XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="summary-item  swiper-slide">
+            <div class="summary-tag">
+              <p>品牌</p>
+            </div>
+            <img src="img/blog5.jpg" alt="">
+            <h6>为什么需要品牌印记</h6>
+            <span class="green iconfont icon-webicon315">2004.09-2008.07</span>
+            <p class="des">XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+          <div class="summary-item  swiper-slide">
+            <div class="summary-tag">
+              <p>品牌</p>
+            </div>
+            <img src="img/blog6.jpg" alt="">
+            <h6>为什么需要品牌印记</h6>
+            <span class="green iconfont icon-webicon315">2004.09-2008.07</span>
+            <p class="des">XXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
     </div>
   </div>
 </body>
+
+<script>
+  //给swiper建立一个新的实例，也就是我们自己要用的实例；
+  var swiper = new Swiper('.swiper-container', {
+    // 增加分页器
+    pagination: {
+      //分页器挂载在swiper-pagination所在的div；
+      el: '.swiper-pagination',
+      //可以点击，并且点击的时候，可以实现内容切换；
+      clickable: true,
+    },
+    // 自动播放
+    autoplay: true,
+    // 循环播放
+    loop: true,
+    // 不同分辨率下的显示数量，640px以下，显示1个内容，内容间 距离是20px
+    slidesPerView: 1,
+    spaceBetween: 20,
+    //断点在：640px以上，768px以下显示2个内容，内容间 距离是20px，其余的依次类推
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    }
+  });
+
+</script>
+
 <script>
   $(function () {
     $('body').running();
